@@ -1,0 +1,73 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family:'all-round-gothic';
+    src: url(/MedSinal/frontend/public/assets/fonts/all-round-gothic-bold.otf) format('opentype');
+}
+
+:root{
+    --cor-primaria:#F1E5CF;
+    --cor-secundaria:#107859;
+    --cor-terciaria:#F1EBE0;
+    --cor-marrom:#744739;
+    --cor-vermelho:#C1122E;
+    --fonte-primaria:'all-round-gothic';
+    --fonte-secundaria:"Libre Franklin", sans-serif;
+}
+
+.fundo-header {
+    position: relative;
+    width: 100%;
+    height: 12rem; 
+}
+
+.fundo-header img:first-child {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+
+.fundo-header h1 {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: var(--fonte-secundaria);
+}
+
+.botao-voltar{
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    cursor: pointer;
+    width: 3.5%;
+}
+
+main{
+  background-color: var(--cor-primaria);
+}
+.imagens-doenca{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+
+}
+#virus-aids{
+    justify-content: center;
+    align-items: center;    
+    width: 30rem;
+    height: 28rem;
+    border-radius: 30px;
+    padding: 5% 4%;
+}
+
+.imagem-botao{
+    position: relative;
+    bottom: 10rem;
+    left: 10rem;
+    width: 5rem;
+    border-radius: 20px;
+}

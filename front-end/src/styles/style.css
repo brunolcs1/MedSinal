@@ -70,8 +70,142 @@ header{
 
 .cabecalho__nav__link{
     color:var(--cor-secundaria);
+    position: relative;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    transition: color 0.3s ease;
+}
+
+.cabecalho__nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: var(--cor-secundaria); 
+    transition: width 0.3s ease;
+}
+
+.cabecalho__nav__link:hover {
+    color: var(--cor-vermelho);
+}
+
+.cabecalho__nav__link:hover::after {
+    width: 100%;
 }
 
 .backgroud__home img{
     width: 100% ;
+}
+
+main{
+    background-color: var(--cor-primaria);
+}
+
+.rolita {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2%;
+    padding: 4% 5%;
+    box-sizing: border-box;
+}
+
+.link-card {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card__image {
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+    border-radius: 10px;
+    width: 9rem;
+    height: 8rem;
+    margin-bottom: 15px;
+}
+
+.card__description {
+    font-family: var(--fonte-secundaria);
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: black;
+}
+
+.sobre-nos {
+    background-color: var(--cor-secundaria);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-nos__container {
+    background-color: var(--cor-primaria);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-nos img {
+    width: 25%;
+    border-radius: 10px;
+}
+
+.sobre-nos__conteudo {
+    width: 60%;
+}
+
+.sobre-nos__conteudo h2 {
+    font-family: var(--fonte-secundaria);
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    margin-bottom: 10px;
+}
+
+.sobre-nos__conteudo p {
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: var(--cor-secundaria);
+    padding: 3% 0;
+    position: relative;
+    text-align: center;
+}
+
+footer img {
+    width: 100%;
+}
+
+.imagem-footer-meio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
 }

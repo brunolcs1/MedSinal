@@ -1,0 +1,40 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family:'all-round-gothic';
+    src: url(/MedSinal/frontend/public/assets/fonts/all-round-gothic-bold.otf) format('opentype');
+}
+
+:root{
+    --cor-primaria:#F1E5CF;
+    --cor-secundaria:#107859;
+    --cor-terciaria:#F1EBE0;
+    --cor-marrom:#744739;
+    --cor-vermelho:#C1122E;
+    --fonte-primaria:'all-round-gothic';
+    --fonte-secundaria:"Libre Franklin", sans-serif;
+}
+
+Colocar o resto
+
+
+
+
+footer {
+    background-color: var(--cor-secundaria);
+    padding: 3% 0;
+    position: relative;
+    text-align: center;
+}
+
+footer img {
+    width: 100%;
+}
+
+.imagem-footer-meio {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 20%; 
+}
