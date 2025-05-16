@@ -27,7 +27,6 @@
     object-fit: cover; 
 }
 
-
 .fundo-header h1 {
     position: absolute;
     top: 30%;
@@ -49,20 +48,22 @@
 main{
   background-color: var(--cor-primaria);
 }
+
+
 .imagens-doenca{
     display: flex;
     justify-content: center;
-    align-items: center;   
-
+    align-items: center; 
 }
-#virus-aids{
+
+.virus-img{
     justify-content: center;
     align-items: center;    
-    width: 30rem;
-    height: 28rem;
-    border-radius: 30px;
+    width: 35%;
     padding: 5% 4%;
+    border-radius: 25px;
 }
+
 
 .imagem-botao{
     position: relative;
@@ -70,4 +71,77 @@ main{
     left: 10rem;
     width: 5rem;
     border-radius: 20px;
+}
+
+.info-doenca{
+    padding-bottom: 2%;
+}
+
+h2 {
+    color: var(--cor-vermelho);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 2rem;
+}
+
+h3{
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 2rem;
+}
+
+p {
+    color: #744739;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.8;   
+    padding: 0 2rem;
+}
+
+ul {
+    list-style: disc;
+    margin: 2.5rem;
+}
+
+ul li{
+    color: #744739;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;   
+}
+
+ul li ul li{
+    list-style: circle;
+    margin-left: 0.1rem;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--cor-secundaria);
+    padding: 0 0 2% 0;
+    position: relative; 
+    text-align: center;
+}
+
+footer img {
+    width: 100%;
+}
+
+.imagem-footer-meio {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 20%;
 }

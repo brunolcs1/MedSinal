@@ -1,0 +1,94 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family:'all-round-gothic';
+    src: url(/MedSinal/frontend/public/assets/fonts/all-round-gothic-bold.otf) format('opentype');
+}
+
+:root{
+    --cor-primaria:#F1E5CF;
+    --cor-secundaria:#107859;
+    --cor-terciaria:#F1EBE0;
+    --cor-marrom:#744739;
+    --cor-vermelho:#C1122E;
+    --fonte-primaria:'all-round-gothic';
+    --fonte-secundaria:"Libre Franklin", sans-serif;
+}
+
+.fundo-header {
+    position: relative;
+    width: 100%; 
+    height: 100vh; 
+}
+
+.fundo-header img:first-child {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+.botao-voltar{
+    position: absolute;
+    top: 20px;
+    left: 20px; 
+    cursor: pointer;
+    width: 3.5%;
+}
+
+main{
+  background-color: var(--cor-secundaria);
+}
+
+.taci-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    min-height: 80vh;
+    max-width: 1100px;
+    padding: 4% 0;
+}
+
+.taci-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+}
+
+.logo-medsinal {
+    width: 13.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.taci-info h2 {
+    font-family: var(--fonte-secundaria);
+    font-size: 2.3rem;
+    font-weight: 900;
+    color: white;
+    line-height: 1.1;
+}
+
+.taci-chat .chat-img {
+    width: 21.25rem;
+    max-width: 100%;
+    border-radius: 18px;
+}
+
+footer {
+    background-color: var(--cor-secundaria);
+    padding: 0 0 2% 0; 
+    position: relative; 
+    text-align: center;
+}
+
+footer img {
+    width: 100%; 
+}
+
+.imagem-footer-meio {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 20%;
+}

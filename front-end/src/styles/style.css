@@ -103,7 +103,7 @@ main{
     background-color: var(--cor-primaria);
 }
 
-.rolita {
+.opcoes {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -209,3 +209,4 @@ footer img {
     transform: translate(-50%, -50%);
     width: 20%;
 }
+
