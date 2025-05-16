@@ -59,9 +59,9 @@ main{
 .virus-img{
     justify-content: center;
     align-items: center;    
-    width: 35%;
-    padding: 5% 4%;
-    border-radius: 25px;
+    width: 40%;
+    margin: 5% 4%;
+    border-radius: 30px;
 }
 
 
@@ -136,12 +136,4 @@ footer {
 
 footer img {
     width: 100%;
-}
-
-.imagem-footer-meio {
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 20%;
 }

@@ -178,7 +178,7 @@ main{
 .sobre-nos__conteudo h2 {
     font-family: var(--fonte-secundaria);
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: bolder;
     color: var(--cor-secundaria);
     margin-bottom: 10px;
 }
@@ -186,7 +186,7 @@ main{
 .sobre-nos__conteudo p {
     font-family: var(--fonte-secundaria);
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     color: black;
     line-height: 1.6;
 }
@@ -201,12 +201,3 @@ footer {
 footer img {
     width: 100%;
 }
-
-.imagem-footer-meio {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20%;
-}
-

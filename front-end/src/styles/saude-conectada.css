@@ -92,11 +92,3 @@ footer {
 footer img {
     width: 100%; 
 }
-
-.imagem-footer-meio {
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 20%;
-}
