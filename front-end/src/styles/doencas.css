@@ -1,30 +1,48 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
-    font-family:'all-round-gothic';
+    font-family: 'all-round-gothic';
     src: url(/MedSinal/frontend/public/assets/fonts/all-round-gothic-bold.otf) format('opentype');
 }
 
-:root{
-    --cor-primaria:#F1E5CF;
-    --cor-secundaria:#107859;
-    --cor-terciaria:#F1EBE0;
-    --cor-marrom:#744739;
-    --cor-vermelho:#C1122E;
-    --fonte-primaria:'all-round-gothic';
-    --fonte-secundaria:"Libre Franklin", sans-serif;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  background-color: var(--cor-primaria);
+}
+
+:root {
+    --cor-primaria: #F1E5CF;
+    --cor-secundaria: #107859;
+    --cor-terciaria: #F1EBE0;
+    --cor-marrom: #744739;
+    --cor-vermelho: #C1122E;
+    --fonte-primaria: 'all-round-gothic';
+    --fonte-secundaria: "Libre Franklin", sans-serif;
 }
 
 .fundo-header {
     position: relative;
     width: 100%;
-    height: 12rem; 
+    height: 12rem;
 }
 
 .fundo-header img:first-child {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .fundo-header h1 {
@@ -37,43 +55,42 @@
     font-family: var(--fonte-secundaria);
 }
 
-.botao-voltar{
+.botao-voltar {
     position: absolute;
-    top: 20px; 
-    left: 20px; 
+    top: 20px;
+    left: 20px;
     cursor: pointer;
     width: 3.5%;
 }
 
-main{
-  background-color: var(--cor-primaria);
+main {
+    background-color: var(--cor-primaria);
 }
 
-
-.imagens-doenca{
+.imagens-doenca {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
-.virus-img{
+.virus-img {
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     width: 40%;
-    margin: 5% 4%;
+    margin: 5% 0%;
     border-radius: 30px;
 }
 
-
-.imagem-botao{
+.imagem-botao {
     position: relative;
-    bottom: 10rem;
-    left: 10rem;
-    width: 5rem;
+    bottom: 9rem;
+    left: 9rem;
+    width: 3rem;
     border-radius: 20px;
+    margin: 2px;
 }
 
-.info-doenca{
+.info-doenca {
     padding-bottom: 2%;
 }
 
@@ -86,7 +103,7 @@ h2 {
     padding: 2rem;
 }
 
-h3{
+h3 {
     font-family: var(--fonte-secundaria);
     color: var(--cor-secundaria);
     font-size: 1rem;
@@ -100,7 +117,7 @@ p {
     font-family: var(--fonte-secundaria);
     font-size: 1rem;
     text-align: justify;
-    line-height: 1.8;   
+    line-height: 1.8;
     padding: 0 2rem;
 }
 
@@ -109,28 +126,27 @@ ul {
     margin: 2.5rem;
 }
 
-ul li{
+ul li {
     color: #744739;
     font-family: var(--fonte-secundaria);
     font-size: 1rem;
     text-align: justify;
     margin-bottom: 1.5rem;
-    line-height: 1.8;   
+    line-height: 1.8;
 }
 
-ul li ul li{
+ul li ul li {
     list-style: circle;
     margin-left: 0.1rem;
 }
 
-.negrito{
+.negrito {
     font-weight: bold;
 }
 
 footer {
     background-color: var(--cor-secundaria);
-    padding: 0 0 2% 0;
-    position: relative; 
+    position: relative;
     text-align: center;
 }
 

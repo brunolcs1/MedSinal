@@ -1,19 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Busca Saúde</title>
   <link rel="stylesheet" href="/front-end/src/styles/busca-saude.css" />
   <link rel="shortcut icon" href="/front-end/public/assets/images/favicon.png" type="image/x-icon" />
-
-  <style>
-    /* Estilo básico para visualização do mapa */
-    #map {
-      width: 100%;
-      height: 500px;
-    }
-  </style>
 </head>
 
 <body>
@@ -27,75 +20,78 @@
   </header>
 
   <main>
-    <div id="map"></div>
 
-    <script>
-      let map;
-      const locations = [
-        {
-          name: "USF Coque/ Dr. Berilo Pernambucano",
-          lat: -8.07158137134206,
-          lng: -34.900026085015256,
-          info: "R. Guapirama, 65, Ilha Joana Bezerra, Recife, PE, Seg-Sex: 08:00-17:00",
-          googleMapsUrl: "https://maps.google.com/?q=Usf Coque Berilo",
-        },
-        {
-          name: "Unit - PE",
-          lat: -8.118005,
-          lng: -34.913418,
-          info: "Detalhes da Unit.",
-          googleMapsUrl: "https://maps.google.com/?q=Unit PE - Recife",
-        },
-        {
-          name: "Meu Local",
-          lat: -8.055,
-          lng: -34.880,
-          info: "Este é o meu local!",
-          googleMapsUrl: "https://maps.google.com/?q=-8.055,-34.880",
-        },
-      ];
+    <div class="container-map">
+      <div id="map"></div>
 
-      async function initMap() {
-        const { Map, InfoWindow } = await google.maps.importLibrary("maps");
+      <script>
+        let map;
+        const locations = [
+          {
+            name: "USF Coque/ Dr. Berilo Pernambucano",
+            lat: -8.07158137134206,
+            lng: -34.900026085015256,
+            info: "R. Guapirama, 65, Ilha Joana Bezerra, Recife, PE, Seg-Sex: 08:00-17:00",
+            googleMapsUrl: "https://maps.google.com/?q=Usf Coque Berilo",
+          },
+          {
+            name: "Unit - PE",
+            lat: -8.118005,
+            lng: -34.913418,
+            info: "Detalhes da Unit.",
+            googleMapsUrl: "https://maps.google.com/?q=Unit PE - Recife",
+          },
+          {
+            name: "Meu Local",
+            lat: -8.055,
+            lng: -34.880,
+            info: "Este é o meu local!",
+            googleMapsUrl: "https://maps.google.com/?q=-8.055,-34.880",
+          },
+        ];
 
-        map = new Map(document.getElementById("map"), {
-          center: { lat: -8.054, lng: -34.881 },
-          zoom: 14,
-        });
+        async function initMap() {
+          const { Map, InfoWindow } = await google.maps.importLibrary("maps");
 
-        const infoWindow = new InfoWindow();
-
-        locations.forEach(({ name, lat, lng, info, googleMapsUrl }) => {
-          const marker = new google.maps.Marker({
-            position: { lat, lng },
-            map,
-            title: name,
+          map = new Map(document.getElementById("map"), {
+            center: { lat: -8.054, lng: -34.881 },
+            zoom: 14,
           });
 
-          marker.addListener("click", () => {
-            const contentString = `
+          const infoWindow = new InfoWindow();
+
+          locations.forEach(({ name, lat, lng, info, googleMapsUrl }) => {
+            const marker = new google.maps.Marker({
+              position: { lat, lng },
+              map,
+              title: name,
+            });
+
+            marker.addListener("click", () => {
+              const contentString = `
               <div>
                 <strong>${name}</strong><br>
                 ${info}<br>
                 <a href="${googleMapsUrl}" target="_blank">Ver no Google Maps</a>
               </div>
             `;
-            infoWindow.setContent(contentString);
-            infoWindow.open(map, marker);
+              infoWindow.setContent(contentString);
+              infoWindow.open(map, marker);
+            });
           });
-        });
-      }
-    </script>
+        }
+      </script>
 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaCKgXzMzsalNLDsa8dYgO64IGv4NqDGA&callback=initMap&libraries=places"
-      async
-      defer
-    ></script>
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaCKgXzMzsalNLDsa8dYgO64IGv4NqDGA&callback=initMap&libraries=places"
+        async defer></script>
+    </div>
+
   </main>
 
   <footer>
     <img src="/front-end/public/assets/images/background-footer.png" alt="imagem de fundo do rodapé" />
   </footer>
 </body>
+
 </html>

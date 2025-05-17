@@ -1,52 +1,53 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
-    font-family:'all-round-gothic';
+    font-family: 'all-round-gothic';
     src: url(/MedSinal/frontend/public/assets/fonts/all-round-gothic-bold.otf) format('opentype');
 }
 
-:root{
-    --cor-primaria:#F1E5CF;
-    --cor-secundaria:#107859;
-    --cor-terciaria:#F1EBE0;
-    --cor-marrom:#744739;
-    --cor-vermelho:#C1122E;
-    --fonte-primaria:'all-round-gothic';
-    --fonte-secundaria:"Libre Franklin", sans-serif;
+:root {
+    --cor-primaria: #F1E5CF;
+    --cor-secundaria: #107859;
+    --cor-terciaria: #F1EBE0;
+    --cor-marrom: #744739;
+    --cor-vermelho: #C1122E;
+    --fonte-primaria: 'all-round-gothic';
+    --fonte-secundaria: "Libre Franklin", sans-serif;
 }
 
 .fundo-header {
     position: relative;
-    width: 100%; 
-    height: 100vh; 
+    width: 100%;
+    height: 100vh;
 }
 
 .fundo-header img:first-child {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     object-fit: cover;
 }
 
-.botao-voltar{
+.botao-voltar {
     position: absolute;
     top: 20px;
-    left: 20px; 
+    left: 20px;
     cursor: pointer;
     width: 3.5%;
 }
 
-main{
-  background-color: var(--cor-primaria);
+main {
+    background-color: var(--cor-secundaria);
 }
 
 .saude-conectada-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(2, 50%); 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50%);
     gap: 15% 10%;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    padding: 12% 2%;
+    padding:9% 2%;
     margin-left: 7%;
 }
 
@@ -56,39 +57,38 @@ main{
     font-family: var(--fonte-secundaria);
     font-weight: bold;
     text-align: center;
-    border-radius: 20px; 
-    width: 10rem; 
-    height: 8rem; 
+    border-radius: 20px;
+    width: 10rem;
+    height: 8rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .saude-conectada-informacoes:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 
-.saude-conectada-informacoes a div{
-  text-decoration: none;
+.saude-conectada-informacoes a div {
+    text-decoration: none;
     color: white;
     font-size: 1rem;
 }
 
 .saude-conectada-grid a {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 footer {
     background-color: var(--cor-secundaria);
-    padding: 0 0 2% 0; 
-    position: relative; 
+    position: relative;
     text-align: center;
 }
 
 footer img {
-    width: 100%; 
+    width: 100%;
 }

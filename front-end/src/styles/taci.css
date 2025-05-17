@@ -1,42 +1,43 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
-    font-family:'all-round-gothic';
+    font-family: 'all-round-gothic';
     src: url(/MedSinal/frontend/public/assets/fonts/all-round-gothic-bold.otf) format('opentype');
 }
 
-:root{
-    --cor-primaria:#F1E5CF;
-    --cor-secundaria:#107859;
-    --cor-terciaria:#F1EBE0;
-    --cor-marrom:#744739;
-    --cor-vermelho:#C1122E;
-    --fonte-primaria:'all-round-gothic';
-    --fonte-secundaria:"Libre Franklin", sans-serif;
+:root {
+    --cor-primaria: #F1E5CF;
+    --cor-secundaria: #107859;
+    --cor-terciaria: #F1EBE0;
+    --cor-marrom: #744739;
+    --cor-vermelho: #C1122E;
+    --fonte-primaria: 'all-round-gothic';
+    --fonte-secundaria: "Libre Franklin", sans-serif;
 }
 
 .fundo-header {
     position: relative;
-    width: 100%; 
-    height: 100vh; 
+    width: 100%;
+    height: 100vh;
 }
 
 .fundo-header img:first-child {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     object-fit: cover;
 }
 
-.botao-voltar{
+.botao-voltar {
     position: absolute;
     top: 20px;
-    left: 20px; 
+    left: 20px;
     cursor: pointer;
     width: 3.5%;
 }
 
-main{
-  background-color: var(--cor-secundaria);
+main {
+    background-color: var(--cor-secundaria);
 }
 
 .taci-container {
@@ -76,11 +77,10 @@ main{
 
 footer {
     background-color: var(--cor-secundaria);
-    padding: 0 0 2% 0; 
-    position: relative; 
+    position: relative;
     text-align: center;
 }
 
 footer img {
-    width: 100%; 
+    width: 100%;
 }

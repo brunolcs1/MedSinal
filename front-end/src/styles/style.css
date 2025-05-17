@@ -1,25 +1,26 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
-    font-family:'all-round-gothic';
+    font-family: 'all-round-gothic';
     src: url(/MedSinal/frontend/public/assets/fonts/all-round-gothic-bold.otf) format('opentype');
 }
 
-:root{
-    --cor-primaria:#F1E5CF;
-    --cor-secundaria:#107859;
-    --cor-terciaria:#F1EBE0;
-    --cor-marrom:#744739;
-    --cor-vermelho:#C1122E;
-    --fonte-primaria:'all-round-gothic';
-    --fonte-secundaria:"Libre Franklin", sans-serif;
+:root {
+    --cor-primaria: #F1E5CF;
+    --cor-secundaria: #107859;
+    --cor-terciaria: #F1EBE0;
+    --cor-marrom: #744739;
+    --cor-vermelho: #C1122E;
+    --fonte-primaria: 'all-round-gothic';
+    --fonte-secundaria: "Libre Franklin", sans-serif;
 }
 
-*{
+* {
     box-sizing: border-box
 }
 
-header{
+header {
     display: flex;
     flex-direction: row;
     padding: 2% 0% 2% 2%;
@@ -27,20 +28,21 @@ header{
     align-items: center;
 }
 
-.logo{
+.logo {
     width: 30%;
 }
 
-.logo img{
+.logo img {
     width: 55%;
     padding-left: 20%;
 }
 
-.cabecalho__nav{
+.cabecalho__nav {
     width: 70%;
     padding-left: 15%;
 }
-.cabecalho__nav ul{
+
+.cabecalho__nav ul {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -49,13 +51,13 @@ header{
     align-items: center;
 }
 
-.cabecalho__nav ul li{
+.cabecalho__nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cabecalho__nav ul a{
+.cabecalho__nav ul a {
     display: flex;
     text-decoration: none;
     justify-content: center;
@@ -65,11 +67,11 @@ header{
     align-items: center;
     text-align: center;
     justify-content: center;
-    letter-spacing:px 1.9px;
+    letter-spacing: px 1.9px;
 }
 
-.cabecalho__nav__link{
-    color:var(--cor-secundaria);
+.cabecalho__nav__link {
+    color: var(--cor-secundaria);
     position: relative;
     text-decoration: none;
     color: var(--cor-secundaria);
@@ -79,11 +81,11 @@ header{
 .cabecalho__nav__link::after {
     content: '';
     position: absolute;
-    bottom: -5px; 
+    bottom: -5px;
     left: 0;
     width: 0;
-    height: 2px; 
-    background-color: var(--cor-secundaria); 
+    height: 2px;
+    background-color: var(--cor-secundaria);
     transition: width 0.3s ease;
 }
 
@@ -95,11 +97,11 @@ header{
     width: 100%;
 }
 
-.backgroud__home img{
-    width: 100% ;
+.backgroud__home img {
+    width: 100%;
 }
 
-main{
+main {
     background-color: var(--cor-primaria);
 }
 
@@ -149,7 +151,7 @@ main{
 
 .sobre-nos {
     background-color: var(--cor-secundaria);
-    padding: 40px 20px;
+    padding: 50px 0px;
     display: flex;
     justify-content: center;
 }
@@ -193,7 +195,6 @@ main{
 
 footer {
     background-color: var(--cor-secundaria);
-    padding: 3% 0;
     position: relative;
     text-align: center;
 }
