@@ -21,35 +21,315 @@
 
   <main>
 
+
     <div class="container-map">
+      <div id="texto-map">
+        <h1 class="cor-verde">Encontre</h1>
+        <h1 class="cor-vermelho">Pontos de</h1>
+        <h1 class="cor-verde">Saúde</h1>
+      </div>
       <div id="map"></div>
 
       <script>
         let map;
         const locations = [
-          {
-            name: "USF Coque/ Dr. Berilo Pernambucano",
-            lat: -8.07158137134206,
-            lng: -34.900026085015256,
-            info: "R. Guapirama, 65, Ilha Joana Bezerra, Recife, PE, Seg-Sex: 08:00-17:00",
-            googleMapsUrl: "https://maps.google.com/?q=Usf Coque Berilo",
-          },
-          {
-            name: "Unit - PE",
-            lat: -8.118005,
-            lng: -34.913418,
-            info: "Detalhes da Unit.",
-            googleMapsUrl: "https://maps.google.com/?q=Unit PE - Recife",
-          },
-          {
-            name: "Meu Local",
-            lat: -8.055,
-            lng: -34.880,
-            info: "Este é o meu local!",
-            googleMapsUrl: "https://maps.google.com/?q=-8.055,-34.880",
-          },
-        ];
+  {
+    "name": "USF Coque/ Dr. Berilo Pernambucano",
+    "lat": -8.068888,
+    "lng": -34.899863,
+    "info": "R. Guapirama, 65, Ilha Joana Bezerra, Recife, PE. Horário: Seg-Sex: 08:00-17:00. Telefone: +55 81 3355-4656",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.068888,-34.899863"
+  },
+  {
+    "name": "USF São José do Coque",
+    "lat": -8.069509,
+    "lng": -34.901663,
+    "info": "Av. Central, 10, Ilha Joana Bezerra, Recife, PE. Horário: Ter e Qui: 08:00-16:00. Telefone: +55 81 3232-2221",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.069509,-34.901663"
+  },
+  {
+    "name": "Policlínica Centro",
+    "lat": -8.063336,
+    "lng": -34.875838,
+    "info": "R. 1º de Março, 90, Santo Antônio, Recife, PE. Horário: Seg-Sex: 07:00-17:00.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.063336,-34.875838"
+  },
+  {
+    "name": "USF Santo Amaro I / Sítio do Céu",
+    "lat": -8.056709,
+    "lng": -34.885873,
+    "info": "R. Anchieta, 520, Santo Amaro, Recife, PE. Horário: Seg-Sex: 07:00-17:00. Telefone: +55 81 3355-4704",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.056709,-34.885873"
+  },
+  {
+    "name": "USF Santo Amaro III",
+    "lat": -8.054193,
+    "lng": -34.881887,
+    "info": "Av. Norte Miguel Arraes de Alencar, 1271, Santo Amaro, Recife, PE. Horário: Seg-Sex: 07:00-17:00.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.054193,-34.881887"
+  },
+  {
+    "name": "USF Ilha Santa Terezinha",
+    "lat": -8.057979,
+    "lng": -34.884649,
+    "info": "R. Artemis, 9, Santo Amaro, Recife, PE. Telefone: +55 81 3355-1526",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.057979,-34.884649"
+  },
+  {
+    "name": "Upinha Nossa Senhora do Pilar",
+    "lat": -8.057849,
+    "lng": -34.881313,
+    "info": "R. do Brum, Recife, Recife, PE. Horário: Seg-Sex: 08:30-17:00. Telefone: +55 81 3224-3628",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.057849,-34.881313"
+  },
+  {
+    "name": "Policlínica Gouveia de Barros",
+    "lat": -8.053781,
+    "lng": -34.889048,
+    "info": "Largo da Santa Cruz, s/n, Boa Vista, Recife, PE.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.053781,-34.889048"
+  },
+  {
+    "name": "Upinha Dra. Fernanda Wanderley",
+    "lat": -8.015885,
+    "lng": -34.918036,
+    "info": "R. Uriel de Holanda, 300, Linha do Tiro, Recife, PE. Horário: Seg-Sex: 07:00-19:00.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.015885,-34.918036"
+  },
+  {
+    "name": "USF Dr. Luiz Wilson – 3º Turno",
+    "lat": -8.007961,
+    "lng": -34.914776,
+    "info": "R. Chã de Alegria, Bomba do Hemetério, Recife, PE. Horário: Seg-Sex: 07:00-17:00.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.007961,-34.914776"
+  },
+  {
+    "name": "USF Alto do Céu / Porto da Madeira",
+    "lat": -8.039789,
+    "lng": -34.869769,
+    "info": "R. Cap. Salgueiro, 267, Porto da Madeira, Recife, PE. Horário: Seg-Sex: 08:00-16:00. Telefone: +55 81 3355-6206",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.039789,-34.869769"
+  },
+  {
+    "name": "Upinha Governador Eduardo Campos",
+    "lat": -8.013557,
+    "lng": -34.921354,
+    "info": "R. Jacob, 162, Bomba do Hemetério, Recife, PE. Horário: Seg-Sex: 07:00-18:00.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.013557,-34.921354"
+  },
+  {
+    "name": "Upinha Chié I e II",
+    "lat": -8.036273,
+    "lng": -34.904313,
+    "info": "Av. Gov. Agamenon Magalhães, s/n, Campo Grande, Recife, PE. Horário: Seg-Sex: 07:00-17:00. Telefone: +55 81 3355-6430",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.036273,-34.904313"
+  },
+  {
+    "name": "USF Alto do Pascoal",
+    "lat": -8.020582,
+    "lng": -34.917352,
+    "info": "Av. Aníbal Benévolo, S/N, Alto Sta Terezinha, Recife, PE. Horário: Seg-Sex: 07:00-19:00.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.020582,-34.917352"
+  },
+  {
+    "name": "USF Tia Regina / Corrego do Deodato – 3º Turno",
+    "lat": -8.016599,
+    "lng": -34.909894,
+    "info": "R. Córrego do Deodato, 315, Água Fria, Recife, PE. Horário: Seg-Qui: 08:00-16:00; Sex: Fechado.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.016599,-34.909894"
+  },
+  {
+    "name": "USF Professor Antônio Francisco Areias",
+    "lat": -8.031487,
+    "lng": -34.902987,
+    "info": "Av. Prof. José dos Anjos, 506, Campo Grande, Recife, PE.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.031487,-34.902987"
+  },
+  {
+    "name": "USF Alto do Capitão",
+    "lat": -7.999976,
+    "lng": -34.923158,
+    "info": "Rua Tupiraçaba, Dois Unidos, Recife, PE. Horário: Seg-Sex: 08:00-12:00, 13:30-17:30. Telefone: +55 81 3232-4190",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-7.999976,-34.923158"
+  },
+  {
+    "name": "USF Byron Sarinho II",
+    "lat": -8.013699,
+    "lng": -34.905912,
+    "info": "R. Nazaré, 293, Água Fria, Recife, PE. Horário: Seg-Sex: 07:30-12:00, 13:00-16:30. Telefone: +55 81 3355-6510",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.013699,-34.905912"
+  },
+  {
+    "name": "USF Chão de Estrela I, II e III",
+    "lat": -7.998432,
+    "lng": -34.871671,
+    "info": "R. Dr. Elias Gomes, 65, Peixinhos, Recife, PE. Horário: Seg-Sex: 09:00-17:00. Telefone: +55 81 3355-6694",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-7.998432,-34.871671"
+  },
+  {
+    "name": "USF Irmã Terezinha I e II",
+    "lat": -8.050443,
+    "lng": -34.893384,
+    "info": "R. Consolação, 9, Campina do Barreto, Recife, PE. Horário: Seg-Sex: 08:00-16:00. Telefone: +55 81 3355-6154",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.050443,-34.893384"
+  },
+  {
+    "name": "USF Alto dos Coqueiros – 3º Turno",
+    "lat": -8.014045,
+    "lng": -34.916028,
+    "info": "R. Córrego da Jaqueira, 160, Linha do Tiro, Recife, PE. Horário: Seg-Sex: 07:30-17:00.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.014045,-34.916028"
+  },
+  {
+    "name": "USF Professor Monteiro de Morais – 3º Turno",
+    "lat": -8.025826,
+    "lng": -34.885648,
+    "info": "Av. Beberibe, 4510, Beberibe, Recife, PE. Horário: Seg-Sex: 06:00-17:00.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.025826,-34.885648"
+  },
+  {
+    "name": "Policlínica Salomão Kelner",
+    "lat": -8.033791,
+    "lng": -34.909077,
+    "info": "Estr. Velha de Água Fria, Tamarineira, Recife, PE. Telefone: +55 81 3355-9929",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.033791,-34.909077"
+  },
+  {
+    "name": "CS Professor Mário Ramos",
+    "lat": -8.028875,
+    "lng": -34.919255,
+    "info": "Rua Oscár de Barros, 175, Casa Amarela, Recife, PE. Horário: Seg-Sex: 07:00-12:00, 13:00-16:00. Telefone: +55 81 3355-4434",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.028875,-34.919255"
+  },
+  {
+    "name": "CS Joaquim Costa Carvalho",
+    "lat": -8.028591,
+    "lng": -34.927588,
+    "info": "Rua Siriji, Alto do Mandu, Recife, PE. Horário: Seg-Sex: 08:00-17:00.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.028591,-34.927588"
+  },
+  {
+    "name": "USF Apipucos",
+    "lat": -8.026228,
+    "lng": -34.941188,
+    "info": "Rua Cel. João Batista do Rêgo Barros, 56, Apipucos, Recife, PE. Horário: Seg-Sex: 08:00-16:00.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.026228,-34.941188"
+  },
+  {
+    "name": "USF Sítio dos Pintos",
+    "lat": -8.006671,
+    "lng": -34.934083,
+    "info": "Rua Pref. Agostinho Nunes Machado, 26, Sítio dos Pintos, Recife, PE.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.006671,-34.934083"
+  },
+  {
+    "name": "USF Sítio dos Pintos",
+    "lat": -8.007143,
+    "lng": -34.934283,
+    "info": "Rua Pref. Agostinho Nunes Machado, 16-134, Sítio dos Pintos, Recife, PE. Horário: Seg-Sex: 08:00-17:00.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.007143,-34.934283"
+  },
+  {
+    "name": "Policlínica Albert Sabin",
+    "lat": -8.032896,
+    "lng": -34.905254,
+    "info": "Rua Padre Roma, 191, Tamarineira, Recife, PE. Horário: Seg-Sex: 07:00-16:30. Telefone: +55 81 3355-2750",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.032896,-34.905254"
+  },
+  {
+    "name": "USF Poço da Panela",
+    "lat": -8.038359,
+    "lng": -34.935923,
+    "info": "Rua Eng. Jaír Furtado Meireles, 321, Poço da Panela, Recife, PE. Horário: Seg-Sex: 07:00-17:00; Sex até 16:00. Telefone: +55 81 3266-5538",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.038359,-34.935923"
+  },
+  {
+    "name": "USF Poço da Panela",
+    "lat": -8.028591,
+    "lng": -34.927588,
+    "info": "Rua Siriji, s/n, Alto do Mandu, Recife, PE. Horário: Seg-Sex: 07:00-19:00. Telefone: +55 81 98526-9068",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.028591,-34.927588"
+  },
+  {
+    "name": "USF Poço da Panela",
+    "lat": -8.076896,
+    "lng": -34.964476,
+    "info": "Rua Vale Verde, 36, Sucupira, Recife, PE. Horário: Seg-Sex: 07:00-17:00. Telefone: +55 81 3251-8797",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.076896,-34.964476"
+  },
+  {
+    "name": "USF Poço da Panela",
+    "lat": -8.020582,
+    "lng": -34.917352,
+    "info": "Avenida Aníbal Benévolo, S/N, Alto Sta Terezinha, Recife, PE. Horário: Seg-Sex: 07:00-19:00.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.020582,-34.917352"
+  },
+  {
+    "name": "USF Poço da Panela",
+    "lat": -8.030992,
+    "lng": -34.900782,
+    "info": "Rua Ramiz Galvão, 379, Arruda, Recife, PE. Horário: Seg-Sex: 07:30-12:00, 13:30-16:30.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.030992,-34.900782"
+  },
+  {
+    "name": "USF Santana",
+    "lat": -8.032779,
+    "lng": -34.908036,
+    "info": "r Olegarina da Cunha, 333, Santana, Recife, PE. Telefone: +55 81 3355-6222",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.032779,-34.908036"
+  },
+  {
+    "name": "USF União das Vilas",
+    "lat": -8.050857,
+    "lng": -34.883613,
+    "info": "Avenida Gov. Agamenon Magalhães, 2901, Santo Amaro, Recife, PE. Horário: Seg-Sex: 07:00-19:00. Telefone: +55 81 3355-6135",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.050857,-34.883613"
+  },
+  {
+    "name": "USF Sítio São Braz",
+    "lat": -8.009003,
+    "lng": -34.935883,
+    "info": "Tv. 3 Sítio São Braz, 60, Sítio dos Pintos, Recife, PE. Horário: Seg-Sex: 08:00-16:00.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.009003,-34.935883"
+  },
+  {
+    "name": "USF Sítio São Braz",
+    "lat": -8.009894,
+    "lng": -34.936184,
+    "info": "Rua do Sítio São Brás, 86, Sítio dos Pintos, Camaragibe, PE. Horário: Seg-Sex: 06:00-16:00.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.009894,-34.936184"
+  },
+  {
+    "name": "CS Francisco Pignatari",
+    "lat": -8.029461,
+    "lng": -34.924324,
+    "info": "Estrada do Arraial, 4155, Casa Amarela, Recife, PE. Horário: Seg-Sex: 07:00-17:00.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.029461,-34.924324"
+  },
+  {
+    "name": "CS Francisco Pignatari",
+    "lat": -8.029461,
+    "lng": -34.924324,
+    "info": "Estrada do Arraial, 4155 Ao lado da linha Transporte Comp. Casa Amarela/Tacaruna - Perto do Merc. pub. de Casa Amarela, com a - Vizinho ao Colegio Dom Vital - Esq. Estrada do Arraial, rua Joaquim Nabuco, Casa Amarela, Recife, PE. Horário: Seg-Fri: 08:00-16:00. Telefone: +55 81 3355-1400",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.029461,-34.924324"
+  },
+  {
+    "name": "CS Dr. José Dustan",
+    "lat": -8.043441,
+    "lng": -34.945797,
+    "info": "Rua Santa Lúcia, 320, Iputinga, Recife, PE. Horário: Seg-Sex: 08:00-16:00.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.043441,-34.945797"
+  },
+  {
+    "name": "Upinha Emocy Krause",
+    "lat": -8.054259,
+    "lng": -34.917219,
+    "info": "Rua Cantora Clara Nunes, Torre, Recife, PE. Horário: Seg: 07:00-13:00; Ter-Sex: 07:00-19:00. Telefone: +55 81 3301-1850",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.054259,-34.917219"
+  }
+];
 
+        
         async function initMap() {
           const { Map, InfoWindow } = await google.maps.importLibrary("maps");
 
@@ -68,17 +348,27 @@
             });
 
             marker.addListener("click", () => {
-              const contentString = `
-              <div>
-                <strong>${name}</strong><br>
-                ${info}<br>
-                <a href="${googleMapsUrl}" target="_blank">Ver no Google Maps</a>
-              </div>
-            `;
+             const contentString = `
+          <div class="info-window-content-styled">
+            <div class="info-window-header">
+              <h4>${name}</h4>
+            </div>
+            <div class="info-window-body">
+              <p>${info}</p>
+              <a href="${googleMapsUrl}" target="_blank" class="google-maps-link">
+                <img src="https://www.google.com/s2/favicons?domain=maps.google.com" alt="Ícone do Google Maps" class="link-icon">
+                Ver no Google Maps
+              </a>
+            </div>
+          </div>
+        `;
               infoWindow.setContent(contentString);
               infoWindow.open(map, marker);
+
+              
             });
           });
+
         }
       </script>
 
