@@ -45,15 +45,12 @@ main {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    min-height: 80vh;
-    max-width: 1100px;
-    padding: 4% 0;
+    padding: 3% 0;
 }
 
 .taci-info {
     display: flex;
     flex-direction: column;
-    min-width: 320px;
 }
 
 .logo-medsinal {
@@ -67,6 +64,21 @@ main {
     font-weight: 900;
     color: white;
     line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    font-family: var(--fonte-secundaria);
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--cor-vermelho);
+    color: white;
+    width: 10rem;
+    padding: 0.5rem 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+
 }
 
 .taci-chat .chat-img {
